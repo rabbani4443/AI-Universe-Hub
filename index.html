@@ -7,10 +7,37 @@
     <!-- TailwindCss and daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                titleColor: '#111',
+                detailColor: '##585858',
+                
+              }
+            }
+          }
+        }
+      </script>
+<!-- font awesome link -->
+<script src="https://kit.fontawesome.com/8eeade2299.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <!-- header section -->
+    <header>
+        <div class="text-center my-10">
+            <h1 class="text-5xl font-semibold text-titleColor pb-8">AI Universe Hub</h1>
+            <button class="bg-red-500 font-semibold text-lg py-2 px-4 rounded-lg text-gray-50">Sort By Date</button>
+        </div>
+    </header>
+    <main class="w-11/12 mx-auto">
+        <div id="all-data-section" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+
+        </div>
+    </main>
+
+
 
     <script src="../js/ai-universe.js"></script>
 </body>
